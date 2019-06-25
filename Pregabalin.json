@@ -544,8 +544,7 @@
               "Unit": "Log Units",
               "ValueOrigin": {
                 "Source": "ParameterIdentification",
-                "Method": "ParameterIdentification",
-                "Description": "Value updated from 'Parameter Identification 5' on 2019-04-17 15:15"
+                "Method": "ParameterIdentification"
               }
             }
           ]
@@ -591,21 +590,6 @@
       ],
       "IntestinalPermeability": [
         {
-          "Name": "Zhou 2016",
-          "IsDefault": false,
-          "Parameters": [
-            {
-              "Name": "Specific intestinal permeability (transcellular)",
-              "Value": 0.0006,
-              "Unit": "cm/s",
-              "ValueOrigin": {
-                "Source": "Publication",
-                "Description": "Zhou 2016"
-              }
-            }
-          ]
-        },
-        {
           "Name": "Fit",
           "Parameters": [
             {
@@ -614,8 +598,7 @@
               "Unit": "cm/min",
               "ValueOrigin": {
                 "Source": "ParameterIdentification",
-                "Method": "ParameterIdentification",
-                "Description": "Value updated from 'Parameter Identification 5' on 2019-04-17 15:15"
+                "Method": "ParameterIdentification"
               }
             }
           ]
@@ -649,7 +632,9 @@
               "Name": "GFR fraction",
               "Value": 1.0,
               "ValueOrigin": {
-                "Method": "Assumption"
+                "Source": "Publication",
+                "Method": "Other",
+                "Description": "Zhou 2016"
               }
             }
           ]
