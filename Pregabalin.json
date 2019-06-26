@@ -1,5 +1,5 @@
 {
-  "Version": 75,
+  "Version": 76,
   "Individuals": [
     {
       "Name": "Bockbrader2010SD",
@@ -544,8 +544,7 @@
               "Unit": "Log Units",
               "ValueOrigin": {
                 "Source": "ParameterIdentification",
-                "Method": "ParameterIdentification",
-                "Description": "Value updated from 'Parameter Identification 5' on 2019-04-17 15:15"
+                "Method": "ParameterIdentification"
               }
             }
           ]
@@ -591,21 +590,6 @@
       ],
       "IntestinalPermeability": [
         {
-          "Name": "Zhou 2016",
-          "IsDefault": false,
-          "Parameters": [
-            {
-              "Name": "Specific intestinal permeability (transcellular)",
-              "Value": 0.0006,
-              "Unit": "cm/s",
-              "ValueOrigin": {
-                "Source": "Publication",
-                "Description": "Zhou 2016"
-              }
-            }
-          ]
-        },
-        {
           "Name": "Fit",
           "Parameters": [
             {
@@ -614,8 +598,7 @@
               "Unit": "cm/min",
               "ValueOrigin": {
                 "Source": "ParameterIdentification",
-                "Method": "ParameterIdentification",
-                "Description": "Value updated from 'Parameter Identification 5' on 2019-04-17 15:15"
+                "Method": "ParameterIdentification"
               }
             }
           ]
@@ -649,7 +632,9 @@
               "Name": "GFR fraction",
               "Value": 1.0,
               "ValueOrigin": {
-                "Method": "Assumption"
+                "Source": "Publication",
+                "Method": "Other",
+                "Description": "Zhou 2016"
               }
             }
           ]
@@ -1383,7 +1368,7 @@
               "Type": "X",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "None",
               "Scaling": "Linear",
               "NumberMode": "Normal"
@@ -1394,7 +1379,7 @@
               "Type": "Y",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Solid",
               "Scaling": "Log",
               "NumberMode": "Normal"
@@ -1406,7 +1391,7 @@
               "X": "Time",
               "Y": "Bockbrader2010_1mg|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
               "CurveOptions": {
-                "Color": "255, 0, 0",
+                "Color": "#FF0000",
                 "LegendIndex": 1
               }
             },
@@ -1415,7 +1400,7 @@
               "X": "Bockbrader2010.Fig1.1 mg|X_modified",
               "Y": "Bockbrader2010.Fig1.1 mg|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|1 mg",
               "CurveOptions": {
-                "Color": "0, 0, 255",
+                "Color": "#0000FF",
                 "LegendIndex": 2,
                 "LineStyle": "None",
                 "Symbol": "Circle"
@@ -1436,7 +1421,70 @@
               "WatermarkSize": 32
             }
           },
-          "OriginText": "PEQ_Pregabalin\nBockbrader2010_1mg\n2019-04-17 15:03"
+          "OriginText": "Pregabalin\nBockbrader2010_1mg\n2019-06-23 13:51"
+        },
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µg/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Bockbrader2010_1mg-Pregabalin-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "Bockbrader2010_1mg|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Bockbrader2010.Fig1.1 mg-Pregabalin-Peripheral Venous Blood-Plasma-1 mg",
+              "X": "Bockbrader2010.Fig1.1 mg|X_modified",
+              "Y": "Bockbrader2010.Fig1.1 mg|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|1 mg",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis 1",
+          "FontAndSize": {
+            "ChartWidth": 600,
+            "ChartHeight": 400,
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "OriginText": "Pregabalin\nBockbrader2010_1mg\n2019-06-23 13:51"
         }
       ]
     },
@@ -1524,7 +1572,7 @@
               "Type": "X",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "None",
               "Scaling": "Linear",
               "NumberMode": "Normal"
@@ -1535,7 +1583,7 @@
               "Type": "Y",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Solid",
               "Scaling": "Log",
               "NumberMode": "Normal"
@@ -1547,7 +1595,7 @@
               "X": "Time",
               "Y": "Bockbrader2010_5mg|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
               "CurveOptions": {
-                "Color": "255, 0, 0",
+                "Color": "#FF0000",
                 "LegendIndex": 1
               }
             },
@@ -1556,7 +1604,7 @@
               "X": "Bockbrader2010.Fig1.5 mg|X_modified",
               "Y": "Bockbrader2010.Fig1.5 mg|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|5 mg",
               "CurveOptions": {
-                "Color": "0, 0, 255",
+                "Color": "#0000FF",
                 "LegendIndex": 2,
                 "LineStyle": "None",
                 "Symbol": "Circle"
@@ -1564,6 +1612,69 @@
             }
           ],
           "Name": "Time Profile Analysis",
+          "FontAndSize": {
+            "ChartWidth": 600,
+            "ChartHeight": 400,
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "OriginText": "PEQ_Pregabalin\nBockbrader2010_5mg\n2019-04-17 15:16"
+        },
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µg/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Bockbrader2010_5mg-Pregabalin-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "Bockbrader2010_5mg|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Bockbrader2010.Fig1.5 mg-Pregabalin-Peripheral Venous Blood-Plasma-5 mg",
+              "X": "Bockbrader2010.Fig1.5 mg|X_modified",
+              "Y": "Bockbrader2010.Fig1.5 mg|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|5 mg",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis 1",
           "FontAndSize": {
             "ChartWidth": 600,
             "ChartHeight": 400,
@@ -1665,7 +1776,7 @@
               "Type": "X",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "None",
               "Scaling": "Linear",
               "NumberMode": "Normal"
@@ -1676,7 +1787,7 @@
               "Type": "Y",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Solid",
               "Scaling": "Log",
               "NumberMode": "Normal"
@@ -1688,7 +1799,7 @@
               "X": "Time",
               "Y": "Bockbrader2010_300mg|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
               "CurveOptions": {
-                "Color": "255, 0, 0",
+                "Color": "#FF0000",
                 "LegendIndex": 1
               }
             },
@@ -1697,7 +1808,7 @@
               "X": "Bockbrader2010.Fig1.300 mg|X_modified",
               "Y": "Bockbrader2010.Fig1.300 mg|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|300 mg",
               "CurveOptions": {
-                "Color": "0, 0, 255",
+                "Color": "#0000FF",
                 "LegendIndex": 2,
                 "LineStyle": "None",
                 "Symbol": "Circle"
@@ -1718,7 +1829,70 @@
               "WatermarkSize": 32
             }
           },
-          "OriginText": "PEQ_Pregabalin\nBockbrader2010_300mg\n2019-04-17 15:03"
+          "OriginText": "Pregabalin\nBockbrader2010_300mg\n2019-06-23 13:51"
+        },
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µg/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Bockbrader2010_300mg-Pregabalin-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "Bockbrader2010_300mg|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Bockbrader2010.Fig1.300 mg-Pregabalin-Peripheral Venous Blood-Plasma-300 mg",
+              "X": "Bockbrader2010.Fig1.300 mg|X_modified",
+              "Y": "Bockbrader2010.Fig1.300 mg|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|300 mg",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis 1",
+          "FontAndSize": {
+            "ChartWidth": 600,
+            "ChartHeight": 400,
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "OriginText": "Pregabalin\nBockbrader2010_300mg\n2019-06-23 13:51"
         }
       ]
     },
@@ -1806,7 +1980,7 @@
               "Type": "X",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "None",
               "Scaling": "Linear",
               "NumberMode": "Normal"
@@ -1817,7 +1991,7 @@
               "Type": "Y",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Solid",
               "Scaling": "Log",
               "NumberMode": "Normal"
@@ -1829,7 +2003,7 @@
               "X": "Time",
               "Y": "Bockbrader2010_10mg|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
               "CurveOptions": {
-                "Color": "255, 0, 0",
+                "Color": "#FF0000",
                 "LegendIndex": 1
               }
             },
@@ -1838,7 +2012,7 @@
               "X": "Bockbrader2010.Fig1.10 mg|X_modified",
               "Y": "Bockbrader2010.Fig1.10 mg|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|10 mg",
               "CurveOptions": {
-                "Color": "0, 0, 255",
+                "Color": "#0000FF",
                 "LegendIndex": 2,
                 "LineStyle": "None",
                 "Symbol": "Circle"
@@ -1846,6 +2020,69 @@
             }
           ],
           "Name": "Time Profile Analysis",
+          "FontAndSize": {
+            "ChartWidth": 600,
+            "ChartHeight": 400,
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "OriginText": "PEQ_Pregabalin\nBockbrader2010_10mg\n2019-04-17 17:16"
+        },
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µg/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Bockbrader2010_10mg-Pregabalin-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "Bockbrader2010_10mg|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Bockbrader2010.Fig1.10 mg-Pregabalin-Peripheral Venous Blood-Plasma-10 mg",
+              "X": "Bockbrader2010.Fig1.10 mg|X_modified",
+              "Y": "Bockbrader2010.Fig1.10 mg|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|10 mg",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis 1",
           "FontAndSize": {
             "ChartWidth": 600,
             "ChartHeight": 400,
@@ -1947,7 +2184,7 @@
               "Type": "X",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "None",
               "Scaling": "Linear",
               "NumberMode": "Normal"
@@ -1958,7 +2195,7 @@
               "Type": "Y",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Solid",
               "Scaling": "Log",
               "NumberMode": "Normal"
@@ -1970,7 +2207,7 @@
               "X": "Time",
               "Y": "Bockbrader2010_125mg|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
               "CurveOptions": {
-                "Color": "255, 0, 0",
+                "Color": "#FF0000",
                 "LegendIndex": 1
               }
             },
@@ -1979,7 +2216,7 @@
               "X": "Bockbrader2010.Fig1.125 mg|X_modified",
               "Y": "Bockbrader2010.Fig1.125 mg|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|125 mg",
               "CurveOptions": {
-                "Color": "0, 0, 255",
+                "Color": "#0000FF",
                 "LegendIndex": 2,
                 "LineStyle": "None",
                 "Symbol": "Circle"
@@ -1987,6 +2224,69 @@
             }
           ],
           "Name": "Time Profile Analysis",
+          "FontAndSize": {
+            "ChartWidth": 600,
+            "ChartHeight": 400,
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "OriginText": "PEQ_Pregabalin\nBockbrader2010_125mg\n2019-04-17 15:18"
+        },
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µg/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Bockbrader2010_125mg-Pregabalin-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "Bockbrader2010_125mg|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Bockbrader2010.Fig1.125 mg-Pregabalin-Peripheral Venous Blood-Plasma-125 mg",
+              "X": "Bockbrader2010.Fig1.125 mg|X_modified",
+              "Y": "Bockbrader2010.Fig1.125 mg|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|125 mg",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis 1",
           "FontAndSize": {
             "ChartWidth": 600,
             "ChartHeight": 400,
@@ -2088,7 +2388,7 @@
               "Type": "X",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "None",
               "Scaling": "Linear",
               "NumberMode": "Normal"
@@ -2099,7 +2399,7 @@
               "Type": "Y",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Solid",
               "Scaling": "Log",
               "NumberMode": "Normal"
@@ -2111,7 +2411,7 @@
               "X": "Time",
               "Y": "Bockbrader2010_25mg|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
               "CurveOptions": {
-                "Color": "255, 0, 0",
+                "Color": "#FF0000",
                 "LegendIndex": 1
               }
             },
@@ -2120,7 +2420,7 @@
               "X": "Bockbrader2010.Fig1.25 mg|X_modified",
               "Y": "Bockbrader2010.Fig1.25 mg|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|25 mg",
               "CurveOptions": {
-                "Color": "0, 0, 255",
+                "Color": "#0000FF",
                 "LegendIndex": 2,
                 "LineStyle": "None",
                 "Symbol": "Circle"
@@ -2128,6 +2428,69 @@
             }
           ],
           "Name": "Time Profile Analysis",
+          "FontAndSize": {
+            "ChartWidth": 600,
+            "ChartHeight": 400,
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "OriginText": "PEQ_Pregabalin\nBockbrader2010_25mg\n2019-04-17 15:17"
+        },
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µg/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Bockbrader2010_25mg-Pregabalin-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "Bockbrader2010_25mg|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Bockbrader2010.Fig1.25 mg-Pregabalin-Peripheral Venous Blood-Plasma-25 mg",
+              "X": "Bockbrader2010.Fig1.25 mg|X_modified",
+              "Y": "Bockbrader2010.Fig1.25 mg|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|25 mg",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis 1",
           "FontAndSize": {
             "ChartWidth": 600,
             "ChartHeight": 400,
@@ -2229,7 +2592,7 @@
               "Type": "X",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "None",
               "Scaling": "Linear",
               "NumberMode": "Normal"
@@ -2240,7 +2603,7 @@
               "Type": "Y",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Solid",
               "Scaling": "Log",
               "NumberMode": "Normal"
@@ -2252,7 +2615,7 @@
               "X": "Time",
               "Y": "Bockbrader2010_2mg|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
               "CurveOptions": {
-                "Color": "255, 0, 0",
+                "Color": "#FF0000",
                 "LegendIndex": 1
               }
             },
@@ -2261,7 +2624,7 @@
               "X": "Bockbrader2010.Fig1.2 mg|X_modified",
               "Y": "Bockbrader2010.Fig1.2 mg|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|2 mg",
               "CurveOptions": {
-                "Color": "0, 128, 0",
+                "Color": "#008000",
                 "LegendIndex": 3,
                 "LineStyle": "None",
                 "Symbol": "Circle"
@@ -2269,6 +2632,69 @@
             }
           ],
           "Name": "Time Profile Analysis",
+          "FontAndSize": {
+            "ChartWidth": 600,
+            "ChartHeight": 400,
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "OriginText": "PEQ_Pregabalin\nBockbrader2010_2mg\n2019-04-17 15:17"
+        },
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µg/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Bockbrader2010_2mg-Pregabalin-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "Bockbrader2010_2mg|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Bockbrader2010.Fig1.2 mg-Pregabalin-Peripheral Venous Blood-Plasma-2 mg",
+              "X": "Bockbrader2010.Fig1.2 mg|X_modified",
+              "Y": "Bockbrader2010.Fig1.2 mg|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|2 mg",
+              "CurveOptions": {
+                "Color": "#008000",
+                "LegendIndex": 3,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis 1",
           "FontAndSize": {
             "ChartWidth": 600,
             "ChartHeight": 400,
@@ -2370,7 +2796,7 @@
               "Type": "X",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "None",
               "Scaling": "Linear",
               "NumberMode": "Normal"
@@ -2381,7 +2807,7 @@
               "Type": "Y",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Solid",
               "Scaling": "Log",
               "NumberMode": "Normal"
@@ -2393,7 +2819,7 @@
               "X": "Time",
               "Y": "Bockbrader2010_50mg|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
               "CurveOptions": {
-                "Color": "255, 0, 0",
+                "Color": "#FF0000",
                 "LegendIndex": 1
               }
             },
@@ -2402,7 +2828,7 @@
               "X": "Bockbrader2010.Fig1.50 mg|X_modified",
               "Y": "Bockbrader2010.Fig1.50 mg|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|50 mg",
               "CurveOptions": {
-                "Color": "0, 0, 255",
+                "Color": "#0000FF",
                 "LegendIndex": 2,
                 "LineStyle": "None",
                 "Symbol": "Circle"
@@ -2410,6 +2836,69 @@
             }
           ],
           "Name": "Time Profile Analysis",
+          "FontAndSize": {
+            "ChartWidth": 600,
+            "ChartHeight": 400,
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "OriginText": "PEQ_Pregabalin\nBockbrader2010_50mg\n2019-04-17 15:16"
+        },
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µg/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Bockbrader2010_50mg-Pregabalin-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "Bockbrader2010_50mg|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Bockbrader2010.Fig1.50 mg-Pregabalin-Peripheral Venous Blood-Plasma-50 mg",
+              "X": "Bockbrader2010.Fig1.50 mg|X_modified",
+              "Y": "Bockbrader2010.Fig1.50 mg|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|50 mg",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis 1",
           "FontAndSize": {
             "ChartWidth": 600,
             "ChartHeight": 400,
@@ -2511,7 +3000,7 @@
               "Type": "X",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "None",
               "Scaling": "Linear",
               "NumberMode": "Normal"
@@ -2522,7 +3011,7 @@
               "Type": "Y",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Solid",
               "Scaling": "Log",
               "NumberMode": "Normal"
@@ -2534,7 +3023,7 @@
               "X": "Time",
               "Y": "Bockbrader2010_75mg|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
               "CurveOptions": {
-                "Color": "255, 0, 0",
+                "Color": "#FF0000",
                 "LegendIndex": 1
               }
             },
@@ -2543,7 +3032,7 @@
               "X": "Bockbrader2010.Fig1.75 mg|X_modified",
               "Y": "Bockbrader2010.Fig1.75 mg|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|75 mg",
               "CurveOptions": {
-                "Color": "0, 0, 255",
+                "Color": "#0000FF",
                 "LegendIndex": 2,
                 "LineStyle": "None",
                 "Symbol": "Circle"
@@ -2551,6 +3040,69 @@
             }
           ],
           "Name": "Time Profile Analysis",
+          "FontAndSize": {
+            "ChartWidth": 600,
+            "ChartHeight": 400,
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "OriginText": "PEQ_Pregabalin\nBockbrader2010_75mg\n2019-04-17 15:16"
+        },
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µg/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Bockbrader2010_75mg-Pregabalin-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "Bockbrader2010_75mg|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Bockbrader2010.Fig1.75 mg-Pregabalin-Peripheral Venous Blood-Plasma-75 mg",
+              "X": "Bockbrader2010.Fig1.75 mg|X_modified",
+              "Y": "Bockbrader2010.Fig1.75 mg|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|75 mg",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis 1",
           "FontAndSize": {
             "ChartWidth": 600,
             "ChartHeight": 400,
@@ -2652,7 +3204,7 @@
               "Type": "X",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "None",
               "Scaling": "Linear",
               "NumberMode": "Normal"
@@ -2663,7 +3215,7 @@
               "Type": "Y",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Solid",
               "Scaling": "Log",
               "NumberMode": "Normal"
@@ -2675,7 +3227,7 @@
               "X": "Time",
               "Y": "Chew 2014 300mg IR|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
               "CurveOptions": {
-                "Color": "255, 0, 0",
+                "Color": "#FF0000",
                 "LegendIndex": 1
               }
             },
@@ -2684,7 +3236,7 @@
               "X": "Chew 2014.300mg IR.PO.mean 300mg IR|X_modified",
               "Y": "Chew 2014.300mg IR.PO.mean 300mg IR|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|IR Fasted",
               "CurveOptions": {
-                "Color": "0, 0, 255",
+                "Color": "#0000FF",
                 "LegendIndex": 2,
                 "LineStyle": "None",
                 "Symbol": "Circle"
@@ -2692,6 +3244,69 @@
             }
           ],
           "Name": "Time Profile Analysis",
+          "FontAndSize": {
+            "ChartWidth": 600,
+            "ChartHeight": 400,
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "OriginText": "PEQ_Pregabalin\nChew 2014 300mg IR\n2019-05-08 21:01"
+        },
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µg/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Chew 2014 300mg IR-Pregabalin-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "Chew 2014 300mg IR|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Chew 2014.300mg IR.PO.mean 300mg IR-Pregabalin-Peripheral Venous Blood-Plasma-IR Fasted",
+              "X": "Chew 2014.300mg IR.PO.mean 300mg IR|X_modified",
+              "Y": "Chew 2014.300mg IR.PO.mean 300mg IR|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|IR Fasted",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis 1",
           "FontAndSize": {
             "ChartWidth": 600,
             "ChartHeight": 400,
@@ -2802,7 +3417,7 @@
               "Type": "X",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "None",
               "Scaling": "Linear",
               "NumberMode": "Normal"
@@ -2813,7 +3428,7 @@
               "Type": "Y",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Solid",
               "Scaling": "Log",
               "NumberMode": "Normal"
@@ -2825,7 +3440,7 @@
               "X": "Time",
               "Y": "Chew 2014 330mg CT fed medium kcal|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
               "CurveOptions": {
-                "Color": "255, 0, 0",
+                "Color": "#FF0000",
                 "LegendIndex": 1
               }
             },
@@ -2834,7 +3449,7 @@
               "X": "Chew 2014.330mg CT.PO.Mean 330mg CT medium kcal|X_modified",
               "Y": "Chew 2014.330mg CT.PO.Mean 330mg CT medium kcal|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|CR Med kcal",
               "CurveOptions": {
-                "Color": "0, 0, 255",
+                "Color": "#0000FF",
                 "LegendIndex": 2,
                 "LineStyle": "None",
                 "Symbol": "Circle"
@@ -2842,6 +3457,69 @@
             }
           ],
           "Name": "Time Profile Analysis",
+          "FontAndSize": {
+            "ChartWidth": 600,
+            "ChartHeight": 400,
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "OriginText": "PEQ_Pregabalin\nChew 2014 330mg CT fed medium kcal\n2019-04-17 15:15"
+        },
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µg/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Chew 2014 330mg CT fed medium kcal-Pregabalin-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "Chew 2014 330mg CT fed medium kcal|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Chew 2014.330mg CT.PO.Mean 330mg CT medium kcal-Pregabalin-Peripheral Venous Blood-Plasma-CR Med kcal",
+              "X": "Chew 2014.330mg CT.PO.Mean 330mg CT medium kcal|X_modified",
+              "Y": "Chew 2014.330mg CT.PO.Mean 330mg CT medium kcal|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|CR Med kcal",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis 1",
           "FontAndSize": {
             "ChartWidth": 600,
             "ChartHeight": 400,
@@ -2943,7 +3621,7 @@
               "Type": "X",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "None",
               "Scaling": "Linear",
               "NumberMode": "Normal"
@@ -2954,7 +3632,7 @@
               "Type": "Y",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Solid",
               "Scaling": "Log",
               "NumberMode": "Normal"
@@ -2966,7 +3644,7 @@
               "X": "Time",
               "Y": "Chew 2014 330mg CT fasted|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
               "CurveOptions": {
-                "Color": "255, 0, 0",
+                "Color": "#FF0000",
                 "LegendIndex": 1
               }
             },
@@ -2975,7 +3653,7 @@
               "X": "Chew 2014.330mg CT.PO.Mean 330mg CT fasted|X_modified",
               "Y": "Chew 2014.330mg CT.PO.Mean 330mg CT fasted|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|CR Fasted",
               "CurveOptions": {
-                "Color": "0, 0, 255",
+                "Color": "#0000FF",
                 "LegendIndex": 2,
                 "LineStyle": "None",
                 "Symbol": "Circle"
@@ -2983,6 +3661,69 @@
             }
           ],
           "Name": "Time Profile Analysis",
+          "FontAndSize": {
+            "ChartWidth": 600,
+            "ChartHeight": 400,
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "OriginText": "PEQ_Pregabalin\nChew 2014 330mg CT fasted\n2019-04-17 15:15"
+        },
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µg/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Chew 2014 330mg CT fasted-Pregabalin-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "Chew 2014 330mg CT fasted|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Chew 2014.330mg CT.PO.Mean 330mg CT fasted-Pregabalin-Peripheral Venous Blood-Plasma-CR Fasted",
+              "X": "Chew 2014.330mg CT.PO.Mean 330mg CT fasted|X_modified",
+              "Y": "Chew 2014.330mg CT.PO.Mean 330mg CT fasted|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|CR Fasted",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis 1",
           "FontAndSize": {
             "ChartWidth": 600,
             "ChartHeight": 400,
@@ -3164,7 +3905,7 @@
               "Type": "X",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "None",
               "Scaling": "Linear",
               "NumberMode": "Normal"
@@ -3175,7 +3916,7 @@
               "Type": "Y",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Solid",
               "Scaling": "Log",
               "NumberMode": "Normal"
@@ -3187,7 +3928,7 @@
               "X": "Time",
               "Y": "Mann 2014 mean 1-23m 15mgkg/day dose|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
               "CurveOptions": {
-                "Color": "255, 0, 0",
+                "Color": "#FF0000",
                 "LegendIndex": 1
               }
             },
@@ -3196,7 +3937,7 @@
               "X": "Mann 2016.7.5 mgkg bid solution.po.mean 1-23m 15mgkg/day|X_modified",
               "Y": "Mann 2016.7.5 mgkg bid solution.po.mean 1-23m 15mgkg/day|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|15 mg/kg",
               "CurveOptions": {
-                "Color": "0, 0, 255",
+                "Color": "#0000FF",
                 "LegendIndex": 2,
                 "LineStyle": "None",
                 "Symbol": "Circle"
@@ -3204,6 +3945,69 @@
             }
           ],
           "Name": "Time Profile Analysis",
+          "FontAndSize": {
+            "ChartWidth": 600,
+            "ChartHeight": 400,
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "OriginText": "PEQ_Pregabalin\nMann 2014 mean 1-23m 15mgkg/day dose\n2019-04-17 15:59"
+        },
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µg/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Mann 2014 mean 1-23m 15mgkg/day dose-Pregabalin-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "Mann 2014 mean 1-23m 15mgkg/day dose|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Mann 2016.7.5 mgkg bid solution.po.mean 1-23m 15mgkg/day-Pregabalin-Peripheral Venous Blood-Plasma-15 mg/kg",
+              "X": "Mann 2016.7.5 mgkg bid solution.po.mean 1-23m 15mgkg/day|X_modified",
+              "Y": "Mann 2016.7.5 mgkg bid solution.po.mean 1-23m 15mgkg/day|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|15 mg/kg",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis 1",
           "FontAndSize": {
             "ChartWidth": 600,
             "ChartHeight": 400,
@@ -3385,7 +4189,7 @@
               "Type": "X",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "None",
               "Scaling": "Linear",
               "NumberMode": "Normal"
@@ -3396,7 +4200,7 @@
               "Type": "Y",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Solid",
               "Scaling": "Log",
               "NumberMode": "Normal"
@@ -3408,7 +4212,7 @@
               "X": "Time",
               "Y": "Mann 2014 mean 1-23m 10mgkg/day dose|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
               "CurveOptions": {
-                "Color": "255, 0, 0",
+                "Color": "#FF0000",
                 "LegendIndex": 1
               }
             },
@@ -3417,7 +4221,7 @@
               "X": "Mann 2016.5 mgkg bid solution.po.mean 1-23m 10mgkg/day|X_modified",
               "Y": "Mann 2016.5 mgkg bid solution.po.mean 1-23m 10mgkg/day|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|10 mg/kg",
               "CurveOptions": {
-                "Color": "0, 0, 255",
+                "Color": "#0000FF",
                 "LegendIndex": 2,
                 "LineStyle": "None",
                 "Symbol": "Circle"
@@ -3425,6 +4229,69 @@
             }
           ],
           "Name": "Time Profile Analysis",
+          "FontAndSize": {
+            "ChartWidth": 600,
+            "ChartHeight": 400,
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "OriginText": "PEQ_Pregabalin\nMann 2014 mean 1-23m 10mgkg/day dose\n2019-04-17 16:42"
+        },
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µg/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Mann 2014 mean 1-23m 10mgkg/day dose-Pregabalin-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "Mann 2014 mean 1-23m 10mgkg/day dose|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Mann 2016.5 mgkg bid solution.po.mean 1-23m 10mgkg/day-Pregabalin-Peripheral Venous Blood-Plasma-10 mg/kg",
+              "X": "Mann 2016.5 mgkg bid solution.po.mean 1-23m 10mgkg/day|X_modified",
+              "Y": "Mann 2016.5 mgkg bid solution.po.mean 1-23m 10mgkg/day|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|10 mg/kg",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis 1",
           "FontAndSize": {
             "ChartWidth": 600,
             "ChartHeight": 400,
@@ -3606,7 +4473,7 @@
               "Type": "X",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "None",
               "Scaling": "Linear",
               "NumberMode": "Normal"
@@ -3617,7 +4484,7 @@
               "Type": "Y",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Solid",
               "Scaling": "Log",
               "NumberMode": "Normal"
@@ -3629,7 +4496,7 @@
               "X": "Time",
               "Y": "Mann 2014 mean 1-23m 2.5mgkg/day dose|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
               "CurveOptions": {
-                "Color": "255, 0, 0",
+                "Color": "#FF0000",
                 "LegendIndex": 1
               }
             },
@@ -3638,7 +4505,7 @@
               "X": "Mann 2016.1.25 mgkg bid solution.po .mean 1-23m 2.5 mgkg/day|X_modified",
               "Y": "Mann 2016.1.25 mgkg bid solution.po .mean 1-23m 2.5 mgkg/day|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|2.5 mg/kg",
               "CurveOptions": {
-                "Color": "0, 0, 255",
+                "Color": "#0000FF",
                 "LegendIndex": 2,
                 "LineStyle": "None",
                 "Symbol": "Circle"
@@ -3646,6 +4513,69 @@
             }
           ],
           "Name": "Time Profile Analysis",
+          "FontAndSize": {
+            "ChartWidth": 600,
+            "ChartHeight": 400,
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "OriginText": "PEQ_Pregabalin\nMann 2014 mean 1-23m 2.5mgkg/day dose\n2019-04-17 15:47"
+        },
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µg/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Mann 2014 mean 1-23m 2.5mgkg/day dose-Pregabalin-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "Mann 2014 mean 1-23m 2.5mgkg/day dose|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Mann 2016.1.25 mgkg bid solution.po .mean 1-23m 2.5 mgkg/day-Pregabalin-Peripheral Venous Blood-Plasma-2.5 mg/kg",
+              "X": "Mann 2016.1.25 mgkg bid solution.po .mean 1-23m 2.5 mgkg/day|X_modified",
+              "Y": "Mann 2016.1.25 mgkg bid solution.po .mean 1-23m 2.5 mgkg/day|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|2.5 mg/kg",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis 1",
           "FontAndSize": {
             "ChartWidth": 600,
             "ChartHeight": 400,
@@ -3827,7 +4757,7 @@
               "Type": "X",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "None",
               "Scaling": "Linear",
               "NumberMode": "Normal"
@@ -3838,7 +4768,7 @@
               "Type": "Y",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Solid",
               "Scaling": "Log",
               "NumberMode": "Normal"
@@ -3850,7 +4780,7 @@
               "X": "Time",
               "Y": "Mann 2014 mean 1-23m 5mgkg/day dose|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
               "CurveOptions": {
-                "Color": "255, 0, 0",
+                "Color": "#FF0000",
                 "LegendIndex": 1
               }
             },
@@ -3859,7 +4789,7 @@
               "X": "Mann 2016.2.5 mgkg bid solution.po .mean 1-23m 5mgkg/day|X_modified",
               "Y": "Mann 2016.2.5 mgkg bid solution.po .mean 1-23m 5mgkg/day|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|5 mg/kg",
               "CurveOptions": {
-                "Color": "0, 0, 255",
+                "Color": "#0000FF",
                 "LegendIndex": 2,
                 "LineStyle": "None",
                 "Symbol": "Circle"
@@ -3867,6 +4797,69 @@
             }
           ],
           "Name": "Time Profile Analysis",
+          "FontAndSize": {
+            "ChartWidth": 600,
+            "ChartHeight": 400,
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "OriginText": "PEQ_Pregabalin\nMann 2014 mean 1-23m 5mgkg/day dose\n2019-04-17 15:58"
+        },
+        {
+          "Axes": [
+            {
+              "Unit": "day(s)",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µg/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Mann 2014 mean 1-23m 5mgkg/day dose-Pregabalin-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "Mann 2014 mean 1-23m 5mgkg/day dose|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Mann 2016.2.5 mgkg bid solution.po .mean 1-23m 5mgkg/day-Pregabalin-Peripheral Venous Blood-Plasma-5 mg/kg",
+              "X": "Mann 2016.2.5 mgkg bid solution.po .mean 1-23m 5mgkg/day|X_modified",
+              "Y": "Mann 2016.2.5 mgkg bid solution.po .mean 1-23m 5mgkg/day|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|5 mg/kg",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis 1",
           "FontAndSize": {
             "ChartWidth": 600,
             "ChartHeight": 400,
@@ -4048,7 +5041,7 @@
               "Type": "X",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "None",
               "Scaling": "Linear",
               "NumberMode": "Normal"
@@ -4059,7 +5052,7 @@
               "Type": "Y",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Solid",
               "Scaling": "Log",
               "NumberMode": "Normal"
@@ -4071,7 +5064,7 @@
               "X": "Time",
               "Y": "Mann 2014 mean 2-6y 10mgkg/day dose|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
               "CurveOptions": {
-                "Color": "255, 0, 0",
+                "Color": "#FF0000",
                 "LegendIndex": 1
               }
             },
@@ -4080,7 +5073,7 @@
               "X": "Mann 2016.5 mgkg bid solution.po.mean 2-6y 10mgkg/day|X_modified",
               "Y": "Mann 2016.5 mgkg bid solution.po.mean 2-6y 10mgkg/day|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|10 mg/kg",
               "CurveOptions": {
-                "Color": "0, 0, 255",
+                "Color": "#0000FF",
                 "LegendIndex": 2,
                 "LineStyle": "None",
                 "Symbol": "Circle"
@@ -4088,6 +5081,69 @@
             }
           ],
           "Name": "Time Profile Analysis",
+          "FontAndSize": {
+            "ChartWidth": 600,
+            "ChartHeight": 400,
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "OriginText": "PEQ_Pregabalin\nMann 2014 mean 2-6y 10mgkg/day dose\n2019-04-17 16:43"
+        },
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µg/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Mann 2014 mean 2-6y 10mgkg/day dose-Pregabalin-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "Mann 2014 mean 2-6y 10mgkg/day dose|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Mann 2016.5 mgkg bid solution.po.mean 2-6y 10mgkg/day-Pregabalin-Peripheral Venous Blood-Plasma-10 mg/kg",
+              "X": "Mann 2016.5 mgkg bid solution.po.mean 2-6y 10mgkg/day|X_modified",
+              "Y": "Mann 2016.5 mgkg bid solution.po.mean 2-6y 10mgkg/day|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|10 mg/kg",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis 1",
           "FontAndSize": {
             "ChartWidth": 600,
             "ChartHeight": 400,
@@ -4269,7 +5325,7 @@
               "Type": "X",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "None",
               "Scaling": "Linear",
               "NumberMode": "Normal"
@@ -4280,7 +5336,7 @@
               "Type": "Y",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Solid",
               "Scaling": "Log",
               "NumberMode": "Normal"
@@ -4292,7 +5348,7 @@
               "X": "Time",
               "Y": "Mann 2014 mean 2-6y 15mgkg/day dose|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
               "CurveOptions": {
-                "Color": "255, 0, 0",
+                "Color": "#FF0000",
                 "LegendIndex": 1
               }
             },
@@ -4301,7 +5357,7 @@
               "X": "Mann 2016.7.5 mgkg bid solution.po.mean 2-6y 15mgkg/day|X_modified",
               "Y": "Mann 2016.7.5 mgkg bid solution.po.mean 2-6y 15mgkg/day|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|15 mg/kg",
               "CurveOptions": {
-                "Color": "0, 0, 255",
+                "Color": "#0000FF",
                 "LegendIndex": 2,
                 "LineStyle": "None",
                 "Symbol": "Circle"
@@ -4309,6 +5365,69 @@
             }
           ],
           "Name": "Time Profile Analysis",
+          "FontAndSize": {
+            "ChartWidth": 600,
+            "ChartHeight": 400,
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "OriginText": "PEQ_Pregabalin\nMann 2014 mean  2-6y 15mgkg/day dose\n2019-04-17 16:43"
+        },
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µg/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Mann 2014 mean 2-6y 15mgkg/day dose-Pregabalin-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "Mann 2014 mean 2-6y 15mgkg/day dose|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Mann 2016.7.5 mgkg bid solution.po.mean 2-6y 15mgkg/day-Pregabalin-Peripheral Venous Blood-Plasma-15 mg/kg",
+              "X": "Mann 2016.7.5 mgkg bid solution.po.mean 2-6y 15mgkg/day|X_modified",
+              "Y": "Mann 2016.7.5 mgkg bid solution.po.mean 2-6y 15mgkg/day|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|15 mg/kg",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis 1",
           "FontAndSize": {
             "ChartWidth": 600,
             "ChartHeight": 400,
@@ -4490,7 +5609,7 @@
               "Type": "X",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "None",
               "Scaling": "Linear",
               "NumberMode": "Normal"
@@ -4501,7 +5620,7 @@
               "Type": "Y",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Solid",
               "Scaling": "Log",
               "NumberMode": "Normal"
@@ -4513,7 +5632,7 @@
               "X": "Time",
               "Y": "Mann 2014 mean 2-6y 2.5mgkg/day dose|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
               "CurveOptions": {
-                "Color": "255, 0, 0",
+                "Color": "#FF0000",
                 "LegendIndex": 1
               }
             },
@@ -4522,7 +5641,7 @@
               "X": "Mann 2016.1.25 mgkg bid solution.po.mean 2-6y 2.5mgkg/day|X_modified",
               "Y": "Mann 2016.1.25 mgkg bid solution.po.mean 2-6y 2.5mgkg/day|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|2.5 mg/kg",
               "CurveOptions": {
-                "Color": "0, 0, 255",
+                "Color": "#0000FF",
                 "LegendIndex": 2,
                 "LineStyle": "None",
                 "Symbol": "Circle"
@@ -4530,6 +5649,69 @@
             }
           ],
           "Name": "Time Profile Analysis",
+          "FontAndSize": {
+            "ChartWidth": 600,
+            "ChartHeight": 400,
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "OriginText": "PEQ_Pregabalin\nMann 2014 mean  2-6y 2.5mgkg/day dose\n2019-04-17 16:43"
+        },
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µg/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Mann 2014 mean 2-6y 2.5mgkg/day dose-Pregabalin-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "Mann 2014 mean 2-6y 2.5mgkg/day dose|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Mann 2016.1.25 mgkg bid solution.po.mean 2-6y 2.5mgkg/day-Pregabalin-Peripheral Venous Blood-Plasma-2.5 mg/kg",
+              "X": "Mann 2016.1.25 mgkg bid solution.po.mean 2-6y 2.5mgkg/day|X_modified",
+              "Y": "Mann 2016.1.25 mgkg bid solution.po.mean 2-6y 2.5mgkg/day|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|2.5 mg/kg",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis 1",
           "FontAndSize": {
             "ChartWidth": 600,
             "ChartHeight": 400,
@@ -4711,7 +5893,7 @@
               "Type": "X",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "None",
               "Scaling": "Linear",
               "NumberMode": "Normal"
@@ -4722,7 +5904,7 @@
               "Type": "Y",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Solid",
               "Scaling": "Log",
               "NumberMode": "Normal"
@@ -4734,7 +5916,7 @@
               "X": "Time",
               "Y": "Mann 2014 mean 2-6y 5mgkg/day dose|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
               "CurveOptions": {
-                "Color": "255, 0, 0",
+                "Color": "#FF0000",
                 "LegendIndex": 1
               }
             },
@@ -4743,7 +5925,7 @@
               "X": "Mann 2016.2.5 mgkg bid solution.po.mean 2-6y 5mgkg/day|X_modified",
               "Y": "Mann 2016.2.5 mgkg bid solution.po.mean 2-6y 5mgkg/day|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|5 mg/kg",
               "CurveOptions": {
-                "Color": "0, 0, 255",
+                "Color": "#0000FF",
                 "LegendIndex": 2,
                 "LineStyle": "None",
                 "Symbol": "Circle"
@@ -4751,6 +5933,69 @@
             }
           ],
           "Name": "Time Profile Analysis",
+          "FontAndSize": {
+            "ChartWidth": 600,
+            "ChartHeight": 400,
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "OriginText": "PEQ_Pregabalin\nMann 2014 mean  2-6y 5mgkg/day dose\n2019-04-17 16:43"
+        },
+        {
+          "Axes": [
+            {
+              "Unit": "day(s)",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µg/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Mann 2014 mean 2-6y 5mgkg/day dose-Pregabalin-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "Mann 2014 mean 2-6y 5mgkg/day dose|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Mann 2016.2.5 mgkg bid solution.po.mean 2-6y 5mgkg/day-Pregabalin-Peripheral Venous Blood-Plasma-5 mg/kg",
+              "X": "Mann 2016.2.5 mgkg bid solution.po.mean 2-6y 5mgkg/day|X_modified",
+              "Y": "Mann 2016.2.5 mgkg bid solution.po.mean 2-6y 5mgkg/day|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|5 mg/kg",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis 1",
           "FontAndSize": {
             "ChartWidth": 600,
             "ChartHeight": 400,
@@ -4932,7 +6177,7 @@
               "Type": "X",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "None",
               "Scaling": "Linear",
               "NumberMode": "Normal"
@@ -4943,7 +6188,7 @@
               "Type": "Y",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Solid",
               "Scaling": "Log",
               "NumberMode": "Normal"
@@ -4955,7 +6200,7 @@
               "X": "Time",
               "Y": "Mann 2014 mean 7-11y 2.5mgkg/day dose|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
               "CurveOptions": {
-                "Color": "255, 0, 0",
+                "Color": "#FF0000",
                 "LegendIndex": 1
               }
             },
@@ -4964,7 +6209,7 @@
               "X": "Mann 2016.1.25 mgkg bid solution.po.mean 7-11y 2.5mgkg/day|X_modified",
               "Y": "Mann 2016.1.25 mgkg bid solution.po.mean 7-11y 2.5mgkg/day|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|2.5 mg/kg",
               "CurveOptions": {
-                "Color": "0, 0, 255",
+                "Color": "#0000FF",
                 "LegendIndex": 2,
                 "LineStyle": "None",
                 "Symbol": "Circle"
@@ -4972,6 +6217,69 @@
             }
           ],
           "Name": "Time Profile Analysis",
+          "FontAndSize": {
+            "ChartWidth": 600,
+            "ChartHeight": 400,
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "OriginText": "PEQ_Pregabalin\nMann 2014 mean  7-11y 2.5mgkg/day dose\n2019-04-17 16:45"
+        },
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µg/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Mann 2014 mean 7-11y 2.5mgkg/day dose-Pregabalin-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "Mann 2014 mean 7-11y 2.5mgkg/day dose|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Mann 2016.1.25 mgkg bid solution.po.mean 7-11y 2.5mgkg/day-Pregabalin-Peripheral Venous Blood-Plasma-2.5 mg/kg",
+              "X": "Mann 2016.1.25 mgkg bid solution.po.mean 7-11y 2.5mgkg/day|X_modified",
+              "Y": "Mann 2016.1.25 mgkg bid solution.po.mean 7-11y 2.5mgkg/day|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|2.5 mg/kg",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis 1",
           "FontAndSize": {
             "ChartWidth": 600,
             "ChartHeight": 400,
@@ -5153,7 +6461,7 @@
               "Type": "X",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "None",
               "Scaling": "Linear",
               "NumberMode": "Normal"
@@ -5164,7 +6472,7 @@
               "Type": "Y",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Solid",
               "Scaling": "Log",
               "NumberMode": "Normal"
@@ -5176,7 +6484,7 @@
               "X": "Time",
               "Y": "Mann 2014 mean 7-11y 15mgkg/day dose|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
               "CurveOptions": {
-                "Color": "255, 0, 0",
+                "Color": "#FF0000",
                 "LegendIndex": 1
               }
             },
@@ -5185,7 +6493,7 @@
               "X": "Mann 2016.7.5 mgkg bid capsule.po.mean 7-11y 15mgkg/day|X_modified",
               "Y": "Mann 2016.7.5 mgkg bid capsule.po.mean 7-11y 15mgkg/day|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|15 mg/kg",
               "CurveOptions": {
-                "Color": "0, 0, 255",
+                "Color": "#0000FF",
                 "LegendIndex": 2,
                 "LineStyle": "None",
                 "Symbol": "Circle"
@@ -5193,6 +6501,69 @@
             }
           ],
           "Name": "Time Profile Analysis",
+          "FontAndSize": {
+            "ChartWidth": 600,
+            "ChartHeight": 400,
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "OriginText": "PEQ_Pregabalin\nMann 2014 mean  7-11y 15mgkg/day dose\n2019-04-17 16:49"
+        },
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µg/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Mann 2014 mean 7-11y 15mgkg/day dose-Pregabalin-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "Mann 2014 mean 7-11y 15mgkg/day dose|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Mann 2016.7.5 mgkg bid capsule.po.mean 7-11y 15mgkg/day-Pregabalin-Peripheral Venous Blood-Plasma-15 mg/kg",
+              "X": "Mann 2016.7.5 mgkg bid capsule.po.mean 7-11y 15mgkg/day|X_modified",
+              "Y": "Mann 2016.7.5 mgkg bid capsule.po.mean 7-11y 15mgkg/day|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|15 mg/kg",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis 1",
           "FontAndSize": {
             "ChartWidth": 600,
             "ChartHeight": 400,
@@ -5374,7 +6745,7 @@
               "Type": "X",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "None",
               "Scaling": "Linear",
               "NumberMode": "Normal"
@@ -5385,7 +6756,7 @@
               "Type": "Y",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Solid",
               "Scaling": "Log",
               "NumberMode": "Normal"
@@ -5397,7 +6768,7 @@
               "X": "Time",
               "Y": "Mann 2014 mean 7-11y 10mgkg/day dose|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
               "CurveOptions": {
-                "Color": "255, 0, 0",
+                "Color": "#FF0000",
                 "LegendIndex": 1
               }
             },
@@ -5406,7 +6777,7 @@
               "X": "Mann 2016.5 mgkg bid capsule.po.mean 7-11y 10mgkg/day|X_modified",
               "Y": "Mann 2016.5 mgkg bid capsule.po.mean 7-11y 10mgkg/day|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|10 mg/kg",
               "CurveOptions": {
-                "Color": "0, 0, 255",
+                "Color": "#0000FF",
                 "LegendIndex": 2,
                 "LineStyle": "None",
                 "Symbol": "Circle"
@@ -5414,6 +6785,69 @@
             }
           ],
           "Name": "Time Profile Analysis",
+          "FontAndSize": {
+            "ChartWidth": 600,
+            "ChartHeight": 400,
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "OriginText": "PEQ_Pregabalin\nMann 2014 mean 7-11y 10mgkg/day dose\n2019-04-17 16:48"
+        },
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µg/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Mann 2014 mean 7-11y 10mgkg/day dose-Pregabalin-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "Mann 2014 mean 7-11y 10mgkg/day dose|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Mann 2016.5 mgkg bid capsule.po.mean 7-11y 10mgkg/day-Pregabalin-Peripheral Venous Blood-Plasma-10 mg/kg",
+              "X": "Mann 2016.5 mgkg bid capsule.po.mean 7-11y 10mgkg/day|X_modified",
+              "Y": "Mann 2016.5 mgkg bid capsule.po.mean 7-11y 10mgkg/day|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|10 mg/kg",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis 1",
           "FontAndSize": {
             "ChartWidth": 600,
             "ChartHeight": 400,
@@ -5595,7 +7029,7 @@
               "Type": "X",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "None",
               "Scaling": "Linear",
               "NumberMode": "Normal"
@@ -5606,7 +7040,7 @@
               "Type": "Y",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Solid",
               "Scaling": "Log",
               "NumberMode": "Normal"
@@ -5618,7 +7052,7 @@
               "X": "Time",
               "Y": "Mann 2014 mean 7-11y 5mgkg/day dose|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
               "CurveOptions": {
-                "Color": "255, 0, 0",
+                "Color": "#FF0000",
                 "LegendIndex": 1
               }
             },
@@ -5627,7 +7061,7 @@
               "X": "Mann 2016.2.5 mgkg bid solution.po.mean 7-11y 5mgkg/day|X_modified",
               "Y": "Mann 2016.2.5 mgkg bid solution.po.mean 7-11y 5mgkg/day|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|5 mg/kg",
               "CurveOptions": {
-                "Color": "0, 0, 255",
+                "Color": "#0000FF",
                 "LegendIndex": 2,
                 "LineStyle": "None",
                 "Symbol": "Circle"
@@ -5635,6 +7069,69 @@
             }
           ],
           "Name": "Time Profile Analysis",
+          "FontAndSize": {
+            "ChartWidth": 600,
+            "ChartHeight": 400,
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "OriginText": "PEQ_Pregabalin\nMann 2014 mean 7-11y 5mgkg/day dose\n2019-04-17 16:45"
+        },
+        {
+          "Axes": [
+            {
+              "Unit": "day(s)",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µg/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Mann 2014 mean 7-11y 5mgkg/day dose-Pregabalin-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "Mann 2014 mean 7-11y 5mgkg/day dose|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Mann 2016.2.5 mgkg bid solution.po.mean 7-11y 5mgkg/day-Pregabalin-Peripheral Venous Blood-Plasma-5 mg/kg",
+              "X": "Mann 2016.2.5 mgkg bid solution.po.mean 7-11y 5mgkg/day|X_modified",
+              "Y": "Mann 2016.2.5 mgkg bid solution.po.mean 7-11y 5mgkg/day|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|5 mg/kg",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis 1",
           "FontAndSize": {
             "ChartWidth": 600,
             "ChartHeight": 400,
@@ -5816,7 +7313,7 @@
               "Type": "X",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "None",
               "Scaling": "Linear",
               "NumberMode": "Normal"
@@ -5827,7 +7324,7 @@
               "Type": "Y",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Solid",
               "Scaling": "Log",
               "NumberMode": "Normal"
@@ -5839,7 +7336,7 @@
               "X": "Time",
               "Y": "Mann 2014 mean 12-16y 15mgkg/day dose|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
               "CurveOptions": {
-                "Color": "255, 0, 0",
+                "Color": "#FF0000",
                 "LegendIndex": 1
               }
             },
@@ -5848,7 +7345,7 @@
               "X": "Mann 2016.7.5 mgkg bid capsule.po.mean 12-16y 15mgkg/day|X_modified",
               "Y": "Mann 2016.7.5 mgkg bid capsule.po.mean 12-16y 15mgkg/day|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|15 mg/kg",
               "CurveOptions": {
-                "Color": "0, 0, 255",
+                "Color": "#0000FF",
                 "LegendIndex": 2,
                 "LineStyle": "None",
                 "Symbol": "Circle"
@@ -5856,6 +7353,69 @@
             }
           ],
           "Name": "Time Profile Analysis",
+          "FontAndSize": {
+            "ChartWidth": 600,
+            "ChartHeight": 400,
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "OriginText": "PEQ_Pregabalin\nMann 2014 mean  12-16y 15mgkg/day dose\n2019-04-17 16:47"
+        },
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µg/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Mann 2014 mean 12-16y 15mgkg/day dose-Pregabalin-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "Mann 2014 mean 12-16y 15mgkg/day dose|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Mann 2016.7.5 mgkg bid capsule.po.mean 12-16y 15mgkg/day-Pregabalin-Peripheral Venous Blood-Plasma-15 mg/kg",
+              "X": "Mann 2016.7.5 mgkg bid capsule.po.mean 12-16y 15mgkg/day|X_modified",
+              "Y": "Mann 2016.7.5 mgkg bid capsule.po.mean 12-16y 15mgkg/day|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|15 mg/kg",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis 1",
           "FontAndSize": {
             "ChartWidth": 600,
             "ChartHeight": 400,
@@ -6037,7 +7597,7 @@
               "Type": "X",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "None",
               "Scaling": "Linear",
               "NumberMode": "Normal"
@@ -6048,7 +7608,7 @@
               "Type": "Y",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Solid",
               "Scaling": "Log",
               "NumberMode": "Normal"
@@ -6060,7 +7620,7 @@
               "X": "Time",
               "Y": "Mann 2014 mean 12-16y 2.5mgkg/day dose|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
               "CurveOptions": {
-                "Color": "255, 0, 0",
+                "Color": "#FF0000",
                 "LegendIndex": 1
               }
             },
@@ -6069,7 +7629,7 @@
               "X": "Mann 2016.1.25 mgkg bid solution.po.mean 12-16y 2.5mgkg/day|X_modified",
               "Y": "Mann 2016.1.25 mgkg bid solution.po.mean 12-16y 2.5mgkg/day|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|2.5 mg/kg",
               "CurveOptions": {
-                "Color": "0, 0, 255",
+                "Color": "#0000FF",
                 "LegendIndex": 2,
                 "LineStyle": "None",
                 "Symbol": "Circle"
@@ -6077,6 +7637,69 @@
             }
           ],
           "Name": "Time Profile Analysis",
+          "FontAndSize": {
+            "ChartWidth": 600,
+            "ChartHeight": 400,
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "OriginText": "PEQ_Pregabalin\nMann 2014 mean  12-16y 2.5mgkg/day dose\n2019-04-17 16:41"
+        },
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µg/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Mann 2014 mean 12-16y 2.5mgkg/day dose-Pregabalin-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "Mann 2014 mean 12-16y 2.5mgkg/day dose|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Mann 2016.1.25 mgkg bid solution.po.mean 12-16y 2.5mgkg/day-Pregabalin-Peripheral Venous Blood-Plasma-2.5 mg/kg",
+              "X": "Mann 2016.1.25 mgkg bid solution.po.mean 12-16y 2.5mgkg/day|X_modified",
+              "Y": "Mann 2016.1.25 mgkg bid solution.po.mean 12-16y 2.5mgkg/day|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|2.5 mg/kg",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis 1",
           "FontAndSize": {
             "ChartWidth": 600,
             "ChartHeight": 400,
@@ -6258,7 +7881,7 @@
               "Type": "X",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "None",
               "Scaling": "Linear",
               "NumberMode": "Normal"
@@ -6269,7 +7892,7 @@
               "Type": "Y",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Solid",
               "Scaling": "Log",
               "NumberMode": "Normal"
@@ -6281,7 +7904,7 @@
               "X": "Time",
               "Y": "Mann 2014 mean 12-16y 10mgkg/day dose|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
               "CurveOptions": {
-                "Color": "255, 0, 0",
+                "Color": "#FF0000",
                 "LegendIndex": 1
               }
             },
@@ -6290,7 +7913,7 @@
               "X": "Mann 2016.5 mgkg bid capsule.po.mean 12-16y 10mgkg/day|X_modified",
               "Y": "Mann 2016.5 mgkg bid capsule.po.mean 12-16y 10mgkg/day|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|10 mg/kg",
               "CurveOptions": {
-                "Color": "0, 0, 255",
+                "Color": "#0000FF",
                 "LegendIndex": 2,
                 "LineStyle": "None",
                 "Symbol": "Circle"
@@ -6298,6 +7921,69 @@
             }
           ],
           "Name": "Time Profile Analysis",
+          "FontAndSize": {
+            "ChartWidth": 600,
+            "ChartHeight": 400,
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "OriginText": "PEQ_Pregabalin\nMann 2014 mean 12-16y 10mgkg/day dose\n2019-04-17 16:47"
+        },
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µg/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Mann 2014 mean 12-16y 10mgkg/day dose-Pregabalin-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "Mann 2014 mean 12-16y 10mgkg/day dose|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Mann 2016.5 mgkg bid capsule.po.mean 12-16y 10mgkg/day-Pregabalin-Peripheral Venous Blood-Plasma-10 mg/kg",
+              "X": "Mann 2016.5 mgkg bid capsule.po.mean 12-16y 10mgkg/day|X_modified",
+              "Y": "Mann 2016.5 mgkg bid capsule.po.mean 12-16y 10mgkg/day|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|10 mg/kg",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis 1",
           "FontAndSize": {
             "ChartWidth": 600,
             "ChartHeight": 400,
@@ -6479,7 +8165,7 @@
               "Type": "X",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "None",
               "Scaling": "Linear",
               "NumberMode": "Normal"
@@ -6490,7 +8176,7 @@
               "Type": "Y",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Solid",
               "Scaling": "Log",
               "NumberMode": "Normal"
@@ -6502,7 +8188,7 @@
               "X": "Time",
               "Y": "Mann 2014 mean 12-16y 5mgkg/day dose|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
               "CurveOptions": {
-                "Color": "255, 0, 0",
+                "Color": "#FF0000",
                 "LegendIndex": 1
               }
             },
@@ -6511,7 +8197,7 @@
               "X": "Mann 2016.2.5 mgkg bid solution.po.mean 12-16y 5mgkg/day|X_modified",
               "Y": "Mann 2016.2.5 mgkg bid solution.po.mean 12-16y 5mgkg/day|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|5 mg/kg",
               "CurveOptions": {
-                "Color": "0, 0, 255",
+                "Color": "#0000FF",
                 "LegendIndex": 2,
                 "LineStyle": "None",
                 "Symbol": "Circle"
@@ -6519,6 +8205,69 @@
             }
           ],
           "Name": "Time Profile Analysis",
+          "FontAndSize": {
+            "ChartWidth": 600,
+            "ChartHeight": 400,
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "OriginText": "PEQ_Pregabalin\nMann 2014 mean 12-16y 5mgkg/day dose\n2019-04-17 16:42"
+        },
+        {
+          "Axes": [
+            {
+              "Unit": "day(s)",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µg/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Mann 2014 mean 12-16y 5mgkg/day dose-Pregabalin-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "Mann 2014 mean 12-16y 5mgkg/day dose|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Mann 2016.2.5 mgkg bid solution.po.mean 12-16y 5mgkg/day-Pregabalin-Peripheral Venous Blood-Plasma-5 mg/kg",
+              "X": "Mann 2016.2.5 mgkg bid solution.po.mean 12-16y 5mgkg/day|X_modified",
+              "Y": "Mann 2016.2.5 mgkg bid solution.po.mean 12-16y 5mgkg/day|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|5 mg/kg",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis 1",
           "FontAndSize": {
             "ChartWidth": 600,
             "ChartHeight": 400,
@@ -6617,7 +8366,7 @@
               "Type": "X",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "None",
               "Scaling": "Linear",
               "NumberMode": "Normal"
@@ -6628,7 +8377,7 @@
               "Type": "Y",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Solid",
               "Scaling": "Log",
               "NumberMode": "Normal"
@@ -6640,7 +8389,7 @@
               "X": "Time",
               "Y": "Mann 2014 mean 12-16y 10mgkg/day dose 0-12h|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
               "CurveOptions": {
-                "Color": "255, 0, 0",
+                "Color": "#FF0000",
                 "LegendIndex": 1
               }
             }
@@ -6744,7 +8493,7 @@
               "Type": "X",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "None",
               "Scaling": "Linear",
               "NumberMode": "Normal"
@@ -6755,7 +8504,7 @@
               "Type": "Y",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Solid",
               "Scaling": "Log",
               "NumberMode": "Normal"
@@ -6767,7 +8516,7 @@
               "X": "Time",
               "Y": "Mann 2014 mean 12-16y 15mgkg/day dose 0-12h|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
               "CurveOptions": {
-                "Color": "255, 0, 0",
+                "Color": "#FF0000",
                 "LegendIndex": 1
               }
             }
@@ -6871,7 +8620,7 @@
               "Type": "X",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "None",
               "Scaling": "Linear",
               "NumberMode": "Normal"
@@ -6882,7 +8631,7 @@
               "Type": "Y",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Solid",
               "Scaling": "Log",
               "NumberMode": "Normal"
@@ -6894,7 +8643,7 @@
               "X": "Time",
               "Y": "Mann 2014 mean 12-16y 2.5mgkg/day dose 0-12h|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
               "CurveOptions": {
-                "Color": "255, 0, 0",
+                "Color": "#FF0000",
                 "LegendIndex": 1
               }
             }
@@ -6998,7 +8747,7 @@
               "Type": "X",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "None",
               "Scaling": "Linear",
               "NumberMode": "Normal"
@@ -7009,7 +8758,7 @@
               "Type": "Y",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Solid",
               "Scaling": "Log",
               "NumberMode": "Normal"
@@ -7021,7 +8770,7 @@
               "X": "Time",
               "Y": "Mann 2014 mean 12-16y 5mgkg/day dose 0-12h|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
               "CurveOptions": {
-                "Color": "255, 0, 0",
+                "Color": "#FF0000",
                 "LegendIndex": 1
               }
             }
@@ -7125,7 +8874,7 @@
               "Type": "X",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "None",
               "Scaling": "Linear",
               "NumberMode": "Normal"
@@ -7136,7 +8885,7 @@
               "Type": "Y",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Solid",
               "Scaling": "Log",
               "NumberMode": "Normal"
@@ -7148,7 +8897,7 @@
               "X": "Time",
               "Y": "Mann 2014 mean 1-23m 10mgkg/day dose 0-12h|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
               "CurveOptions": {
-                "Color": "255, 0, 0",
+                "Color": "#FF0000",
                 "LegendIndex": 1
               }
             }
@@ -7252,7 +9001,7 @@
               "Type": "X",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "None",
               "Scaling": "Linear",
               "NumberMode": "Normal"
@@ -7263,7 +9012,7 @@
               "Type": "Y",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Solid",
               "Scaling": "Log",
               "NumberMode": "Normal"
@@ -7275,7 +9024,7 @@
               "X": "Time",
               "Y": "Mann 2014 mean 1-23m 15mgkg/day dose 0-12h|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
               "CurveOptions": {
-                "Color": "255, 0, 0",
+                "Color": "#FF0000",
                 "LegendIndex": 1
               }
             }
@@ -7379,7 +9128,7 @@
               "Type": "X",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "None",
               "Scaling": "Linear",
               "NumberMode": "Normal"
@@ -7390,7 +9139,7 @@
               "Type": "Y",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Solid",
               "Scaling": "Log",
               "NumberMode": "Normal"
@@ -7402,7 +9151,7 @@
               "X": "Time",
               "Y": "Mann 2014 mean 1-23m 2.5mgkg/day dose 0-12h|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
               "CurveOptions": {
-                "Color": "255, 0, 0",
+                "Color": "#FF0000",
                 "LegendIndex": 1
               }
             }
@@ -7506,7 +9255,7 @@
               "Type": "X",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "None",
               "Scaling": "Linear",
               "NumberMode": "Normal"
@@ -7517,7 +9266,7 @@
               "Type": "Y",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Solid",
               "Scaling": "Log",
               "NumberMode": "Normal"
@@ -7529,7 +9278,7 @@
               "X": "Time",
               "Y": "Mann 2014 mean 1-23m 5mgkg/day dose 0-12h|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
               "CurveOptions": {
-                "Color": "255, 0, 0",
+                "Color": "#FF0000",
                 "LegendIndex": 1
               }
             }
@@ -7633,7 +9382,7 @@
               "Type": "X",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "None",
               "Scaling": "Linear",
               "NumberMode": "Normal"
@@ -7644,7 +9393,7 @@
               "Type": "Y",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Solid",
               "Scaling": "Log",
               "NumberMode": "Normal"
@@ -7656,7 +9405,7 @@
               "X": "Time",
               "Y": "Mann 2014 mean 2-6y 10mgkg/day dose 0-12h|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
               "CurveOptions": {
-                "Color": "255, 0, 0",
+                "Color": "#FF0000",
                 "LegendIndex": 1
               }
             }
@@ -7760,7 +9509,7 @@
               "Type": "X",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "None",
               "Scaling": "Linear",
               "NumberMode": "Normal"
@@ -7771,7 +9520,7 @@
               "Type": "Y",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Solid",
               "Scaling": "Log",
               "NumberMode": "Normal"
@@ -7783,7 +9532,7 @@
               "X": "Time",
               "Y": "Mann 2014 mean 2-6y 15mgkg/day dose 0-12h|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
               "CurveOptions": {
-                "Color": "255, 0, 0",
+                "Color": "#FF0000",
                 "LegendIndex": 1
               }
             }
@@ -7887,7 +9636,7 @@
               "Type": "X",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "None",
               "Scaling": "Linear",
               "NumberMode": "Normal"
@@ -7898,7 +9647,7 @@
               "Type": "Y",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Solid",
               "Scaling": "Log",
               "NumberMode": "Normal"
@@ -7910,7 +9659,7 @@
               "X": "Time",
               "Y": "Mann 2014 mean 2-6y 2.5mgkg/day dose 0-12h|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
               "CurveOptions": {
-                "Color": "255, 0, 0",
+                "Color": "#FF0000",
                 "LegendIndex": 1
               }
             }
@@ -8014,7 +9763,7 @@
               "Type": "X",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "None",
               "Scaling": "Linear",
               "NumberMode": "Normal"
@@ -8025,7 +9774,7 @@
               "Type": "Y",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Solid",
               "Scaling": "Log",
               "NumberMode": "Normal"
@@ -8037,7 +9786,7 @@
               "X": "Time",
               "Y": "Mann 2014 mean 2-6y 5mgkg/day dose 0-12h|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
               "CurveOptions": {
-                "Color": "255, 0, 0",
+                "Color": "#FF0000",
                 "LegendIndex": 1
               }
             }
@@ -8141,7 +9890,7 @@
               "Type": "X",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "None",
               "Scaling": "Linear",
               "NumberMode": "Normal"
@@ -8152,7 +9901,7 @@
               "Type": "Y",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Solid",
               "Scaling": "Log",
               "NumberMode": "Normal"
@@ -8164,7 +9913,7 @@
               "X": "Time",
               "Y": "Mann 2014 mean 7-11y 10mgkg/day dose 0-12h|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
               "CurveOptions": {
-                "Color": "255, 0, 0",
+                "Color": "#FF0000",
                 "LegendIndex": 1
               }
             }
@@ -8268,7 +10017,7 @@
               "Type": "X",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "None",
               "Scaling": "Linear",
               "NumberMode": "Normal"
@@ -8279,7 +10028,7 @@
               "Type": "Y",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Solid",
               "Scaling": "Log",
               "NumberMode": "Normal"
@@ -8291,7 +10040,7 @@
               "X": "Time",
               "Y": "Mann 2014 mean 7-11y 15mgkg/day dose 0-12h|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
               "CurveOptions": {
-                "Color": "255, 0, 0",
+                "Color": "#FF0000",
                 "LegendIndex": 1
               }
             }
@@ -8395,7 +10144,7 @@
               "Type": "X",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "None",
               "Scaling": "Linear",
               "NumberMode": "Normal"
@@ -8406,7 +10155,7 @@
               "Type": "Y",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Solid",
               "Scaling": "Log",
               "NumberMode": "Normal"
@@ -8418,7 +10167,7 @@
               "X": "Time",
               "Y": "Mann 2014 mean 7-11y 2.5mgkg/day dose 0-12h|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
               "CurveOptions": {
-                "Color": "255, 0, 0",
+                "Color": "#FF0000",
                 "LegendIndex": 1
               }
             }
@@ -8522,7 +10271,7 @@
               "Type": "X",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "None",
               "Scaling": "Linear",
               "NumberMode": "Normal"
@@ -8533,7 +10282,7 @@
               "Type": "Y",
               "GridLines": false,
               "Visible": true,
-              "DefaultColor": "White",
+              "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Solid",
               "Scaling": "Log",
               "NumberMode": "Normal"
@@ -8545,7 +10294,7 @@
               "X": "Time",
               "Y": "Mann 2014 mean 7-11y 5mgkg/day dose 0-12h|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
               "CurveOptions": {
-                "Color": "255, 0, 0",
+                "Color": "#FF0000",
                 "LegendIndex": 1
               }
             }
@@ -8903,7 +10652,7 @@
                 "Type": "X",
                 "GridLines": false,
                 "Visible": true,
-                "DefaultColor": "White",
+                "DefaultColor": "#FFFFFF",
                 "DefaultLineStyle": "None",
                 "Scaling": "Log",
                 "NumberMode": "Normal"
@@ -8914,7 +10663,7 @@
                 "Type": "Y",
                 "GridLines": false,
                 "Visible": true,
-                "DefaultColor": "White",
+                "DefaultColor": "#FFFFFF",
                 "DefaultLineStyle": "Solid",
                 "Scaling": "Log",
                 "NumberMode": "Normal"
@@ -8926,7 +10675,7 @@
                 "X": "Bockbrader2010.Fig1.1 mg|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|1 mg",
                 "Y": "Bockbrader2010_1mg|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
                 "CurveOptions": {
-                  "Color": "255, 0, 0",
+                  "Color": "#FF0000",
                   "LegendIndex": 1,
                   "LineStyle": "None",
                   "Symbol": "Diamond"
@@ -8937,7 +10686,7 @@
                 "X": "Bockbrader2010.Fig1.50 mg|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|50 mg",
                 "Y": "Bockbrader2010_50mg|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
                 "CurveOptions": {
-                  "Color": "0, 0, 255",
+                  "Color": "#0000FF",
                   "LegendIndex": 2,
                   "LineStyle": "None",
                   "Symbol": "Diamond"
@@ -8948,7 +10697,7 @@
                 "X": "Bockbrader2010.Fig1.5 mg|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|5 mg",
                 "Y": "Bockbrader2010_5mg|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
                 "CurveOptions": {
-                  "Color": "0, 128, 0",
+                  "Color": "#008000",
                   "LegendIndex": 3,
                   "LineStyle": "None",
                   "Symbol": "Diamond"
@@ -8959,7 +10708,7 @@
                 "X": "Bockbrader2010.Fig1.10 mg|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|10 mg",
                 "Y": "Bockbrader2010_10mg|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
                 "CurveOptions": {
-                  "Color": "255, 0, 255",
+                  "Color": "#FF00FF",
                   "LegendIndex": 4,
                   "LineStyle": "None",
                   "Symbol": "Diamond"
@@ -8970,7 +10719,7 @@
                 "X": "Bockbrader2010.Fig1.300 mg|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|300 mg",
                 "Y": "Bockbrader2010_300mg|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
                 "CurveOptions": {
-                  "Color": "255, 128, 0",
+                  "Color": "#FF8000",
                   "LegendIndex": 5,
                   "LineStyle": "None",
                   "Symbol": "Diamond"
@@ -8981,7 +10730,7 @@
                 "X": "Bockbrader2010.Fig1.75 mg|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|75 mg",
                 "Y": "Bockbrader2010_75mg|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
                 "CurveOptions": {
-                  "Color": "0, 192, 192",
+                  "Color": "#00C0C0",
                   "LegendIndex": 6,
                   "LineStyle": "None",
                   "Symbol": "Diamond"
@@ -8992,7 +10741,7 @@
                 "X": "Bockbrader2010.Fig1.125 mg|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|125 mg",
                 "Y": "Bockbrader2010_125mg|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
                 "CurveOptions": {
-                  "Color": "192, 0, 192",
+                  "Color": "#C000C0",
                   "LegendIndex": 7,
                   "LineStyle": "None",
                   "Symbol": "Diamond"
@@ -9003,7 +10752,7 @@
                 "X": "Bockbrader2010.Fig1.2 mg|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|2 mg",
                 "Y": "Bockbrader2010_2mg|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
                 "CurveOptions": {
-                  "Color": "192, 64, 0",
+                  "Color": "#C04000",
                   "LegendIndex": 8,
                   "LineStyle": "None",
                   "Symbol": "Diamond"
@@ -9014,7 +10763,7 @@
                 "X": "Chew 2014.330mg CT.PO.Mean 330mg CT fasted|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|CR Fasted",
                 "Y": "Chew 2014 330mg CT fasted|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
                 "CurveOptions": {
-                  "Color": "0, 255, 0",
+                  "Color": "#00FF00",
                   "LegendIndex": 9,
                   "LineStyle": "None",
                   "Symbol": "Diamond"
@@ -9025,7 +10774,7 @@
                 "X": "Bockbrader2010.Fig1.25 mg|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|25 mg",
                 "Y": "Bockbrader2010_25mg|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
                 "CurveOptions": {
-                  "Color": "128, 128, 128",
+                  "Color": "#808080",
                   "LegendIndex": 10,
                   "LineStyle": "None",
                   "Symbol": "Diamond"
@@ -9036,7 +10785,7 @@
                 "X": "Chew 2014.300mg IR.PO.mean 300mg IR|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|IR Fasted",
                 "Y": "Chew 2014 300mg IR|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
                 "CurveOptions": {
-                  "Color": "192, 192, 0",
+                  "Color": "#C0C000",
                   "LegendIndex": 11,
                   "LineStyle": "None",
                   "Symbol": "Diamond"
@@ -9047,7 +10796,7 @@
                 "X": "Chew 2014.330mg CT.PO.Mean 330mg CT medium kcal|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|CR Med kcal",
                 "Y": "Chew 2014 330mg CT fed medium kcal|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
                 "CurveOptions": {
-                  "Color": "128, 128, 255",
+                  "Color": "#8080FF",
                   "LegendIndex": 12,
                   "LineStyle": "None",
                   "Symbol": "Diamond"
@@ -9058,8 +10807,8 @@
             "Settings": {
               "SideMarginsEnabled": true,
               "LegendPosition": "BottomInside",
-              "BackColor": "Transparent",
-              "DiagramBackColor": "White"
+              "BackColor": "#FFFFFF",
+              "DiagramBackColor": "#FFFFFF"
             }
           }
         },
@@ -9074,7 +10823,7 @@
                 "Type": "X",
                 "GridLines": false,
                 "Visible": true,
-                "DefaultColor": "White",
+                "DefaultColor": "#FFFFFF",
                 "DefaultLineStyle": "None",
                 "Scaling": "Linear",
                 "NumberMode": "Normal"
@@ -9085,7 +10834,7 @@
                 "Type": "Y",
                 "GridLines": false,
                 "Visible": true,
-                "DefaultColor": "White",
+                "DefaultColor": "#FFFFFF",
                 "DefaultLineStyle": "Solid",
                 "Scaling": "Log",
                 "NumberMode": "Normal"
@@ -9098,7 +10847,7 @@
                 "Y": "Chew 2014.330mg CT.PO.Mean 330mg CT medium kcal|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|CR Med kcal",
                 "CurveOptions": {
                   "VisibleInLegend": false,
-                  "Color": "255, 0, 0",
+                  "Color": "#FF0000",
                   "LegendIndex": 1,
                   "LineStyle": "None",
                   "Symbol": "Circle"
@@ -9110,7 +10859,7 @@
                 "Y": "Chew 2014.330mg CT.PO.Mean 330mg CT fasted|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|CR Fasted",
                 "CurveOptions": {
                   "VisibleInLegend": false,
-                  "Color": "0, 0, 255",
+                  "Color": "#0000FF",
                   "LegendIndex": 2,
                   "LineStyle": "None",
                   "Symbol": "Circle"
@@ -9122,7 +10871,7 @@
                 "Y": "Chew 2014.300mg IR.PO.mean 300mg IR|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|IR Fasted",
                 "CurveOptions": {
                   "VisibleInLegend": false,
-                  "Color": "0, 128, 0",
+                  "Color": "#008000",
                   "LegendIndex": 3,
                   "LineStyle": "None",
                   "Symbol": "Circle"
@@ -9134,7 +10883,7 @@
                 "Y": "Bockbrader2010.Fig1.75 mg|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|75 mg",
                 "CurveOptions": {
                   "VisibleInLegend": false,
-                  "Color": "255, 0, 255",
+                  "Color": "#FF00FF",
                   "LegendIndex": 4,
                   "LineStyle": "None",
                   "Symbol": "Circle"
@@ -9146,7 +10895,7 @@
                 "Y": "Bockbrader2010.Fig1.5 mg|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|5 mg",
                 "CurveOptions": {
                   "VisibleInLegend": false,
-                  "Color": "255, 128, 0",
+                  "Color": "#FF8000",
                   "LegendIndex": 5,
                   "LineStyle": "None",
                   "Symbol": "Circle"
@@ -9158,7 +10907,7 @@
                 "Y": "Bockbrader2010.Fig1.50 mg|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|50 mg",
                 "CurveOptions": {
                   "VisibleInLegend": false,
-                  "Color": "0, 192, 192",
+                  "Color": "#00C0C0",
                   "LegendIndex": 6,
                   "LineStyle": "None",
                   "Symbol": "Circle"
@@ -9170,7 +10919,7 @@
                 "Y": "Bockbrader2010.Fig1.300 mg|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|300 mg",
                 "CurveOptions": {
                   "VisibleInLegend": false,
-                  "Color": "192, 0, 192",
+                  "Color": "#C000C0",
                   "LegendIndex": 7,
                   "LineStyle": "None",
                   "Symbol": "Circle"
@@ -9182,7 +10931,7 @@
                 "Y": "Bockbrader2010.Fig1.2 mg|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|2 mg",
                 "CurveOptions": {
                   "VisibleInLegend": false,
-                  "Color": "192, 64, 0",
+                  "Color": "#C04000",
                   "LegendIndex": 8,
                   "LineStyle": "None",
                   "Symbol": "Circle"
@@ -9194,7 +10943,7 @@
                 "Y": "Bockbrader2010.Fig1.25 mg|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|25 mg",
                 "CurveOptions": {
                   "VisibleInLegend": false,
-                  "Color": "0, 255, 0",
+                  "Color": "#00FF00",
                   "LegendIndex": 9,
                   "LineStyle": "None",
                   "Symbol": "Circle"
@@ -9206,7 +10955,7 @@
                 "Y": "Bockbrader2010.Fig1.1 mg|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|1 mg",
                 "CurveOptions": {
                   "VisibleInLegend": false,
-                  "Color": "128, 128, 128",
+                  "Color": "#808080",
                   "LegendIndex": 10,
                   "LineStyle": "None",
                   "Symbol": "Circle"
@@ -9218,7 +10967,7 @@
                 "Y": "Bockbrader2010.Fig1.125 mg|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|125 mg",
                 "CurveOptions": {
                   "VisibleInLegend": false,
-                  "Color": "192, 192, 0",
+                  "Color": "#C0C000",
                   "LegendIndex": 11,
                   "LineStyle": "None",
                   "Symbol": "Circle"
@@ -9230,7 +10979,7 @@
                 "Y": "Bockbrader2010.Fig1.10 mg|ObservedData|Peripheral Venous Blood|Plasma|Pregabalin|10 mg",
                 "CurveOptions": {
                   "VisibleInLegend": false,
-                  "Color": "128, 128, 255",
+                  "Color": "#8080FF",
                   "LegendIndex": 12,
                   "LineStyle": "None",
                   "Symbol": "Circle"
@@ -9241,7 +10990,7 @@
                 "X": "Time",
                 "Y": "Bockbrader2010_1mg|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
                 "CurveOptions": {
-                  "Color": "128, 128, 128",
+                  "Color": "#808080",
                   "LegendIndex": 13
                 }
               },
@@ -9250,7 +10999,7 @@
                 "X": "Time",
                 "Y": "Bockbrader2010_50mg|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
                 "CurveOptions": {
-                  "Color": "0, 192, 192",
+                  "Color": "#00C0C0",
                   "LegendIndex": 14
                 }
               },
@@ -9259,7 +11008,7 @@
                 "X": "Time",
                 "Y": "Bockbrader2010_5mg|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
                 "CurveOptions": {
-                  "Color": "255, 128, 0",
+                  "Color": "#FF8000",
                   "LegendIndex": 15
                 }
               },
@@ -9268,7 +11017,7 @@
                 "X": "Time",
                 "Y": "Bockbrader2010_10mg|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
                 "CurveOptions": {
-                  "Color": "128, 128, 255",
+                  "Color": "#8080FF",
                   "LegendIndex": 16
                 }
               },
@@ -9277,7 +11026,7 @@
                 "X": "Time",
                 "Y": "Bockbrader2010_300mg|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
                 "CurveOptions": {
-                  "Color": "192, 0, 192",
+                  "Color": "#C000C0",
                   "LegendIndex": 17
                 }
               },
@@ -9286,7 +11035,7 @@
                 "X": "Time",
                 "Y": "Bockbrader2010_75mg|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
                 "CurveOptions": {
-                  "Color": "255, 0, 255",
+                  "Color": "#FF00FF",
                   "LegendIndex": 18
                 }
               },
@@ -9295,7 +11044,7 @@
                 "X": "Time",
                 "Y": "Bockbrader2010_125mg|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
                 "CurveOptions": {
-                  "Color": "192, 192, 0",
+                  "Color": "#C0C000",
                   "LegendIndex": 19
                 }
               },
@@ -9304,7 +11053,7 @@
                 "X": "Time",
                 "Y": "Bockbrader2010_2mg|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
                 "CurveOptions": {
-                  "Color": "192, 64, 0",
+                  "Color": "#C04000",
                   "LegendIndex": 20
                 }
               },
@@ -9313,7 +11062,7 @@
                 "X": "Time",
                 "Y": "Chew 2014 330mg CT fasted|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
                 "CurveOptions": {
-                  "Color": "0, 0, 255",
+                  "Color": "#0000FF",
                   "LegendIndex": 21
                 }
               },
@@ -9322,7 +11071,7 @@
                 "X": "Time",
                 "Y": "Bockbrader2010_25mg|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
                 "CurveOptions": {
-                  "Color": "0, 255, 0",
+                  "Color": "#00FF00",
                   "LegendIndex": 22
                 }
               },
@@ -9331,7 +11080,7 @@
                 "X": "Time",
                 "Y": "Chew 2014 300mg IR|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
                 "CurveOptions": {
-                  "Color": "0, 128, 0",
+                  "Color": "#008000",
                   "LegendIndex": 23
                 }
               },
@@ -9340,7 +11089,7 @@
                 "X": "Time",
                 "Y": "Chew 2014 330mg CT fed medium kcal|Organism|PeripheralVenousBlood|Pregabalin|Plasma (Peripheral Venous Blood)",
                 "CurveOptions": {
-                  "Color": "255, 0, 0",
+                  "Color": "#FF0000",
                   "LegendIndex": 24
                 }
               }
@@ -9349,8 +11098,8 @@
             "Settings": {
               "SideMarginsEnabled": true,
               "LegendPosition": "None",
-              "BackColor": "Transparent",
-              "DiagramBackColor": "White"
+              "BackColor": "#FFFFFF",
+              "DiagramBackColor": "#FFFFFF"
             }
           }
         },
@@ -9429,23 +11178,23 @@
             "MolWeight": 159.23
           },
           "Values": [
-            7.50641537,
-            9.382496,
-            8.259526,
-            7.042891,
-            5.72513247,
-            4.96023,
-            3.66449332,
-            2.885411,
-            2.165909,
-            1.70543027,
-            0.381342232,
-            0.08944521,
-            0.0234553665,
-            0.004401479
+            7506.41553,
+            9382.495,
+            8259.526,
+            7042.891,
+            5725.13232,
+            4960.23,
+            3664.49341,
+            2885.41113,
+            2165.90918,
+            1705.43018,
+            381.342224,
+            89.4452057,
+            23.4553661,
+            4.401479
           ],
           "Dimension": "Concentration (mass)",
-          "Unit": "mg/l"
+          "Unit": "µg/l"
         }
       ],
       "BaseGrid": {
@@ -9659,23 +11408,23 @@
             "MolWeight": 159.23
           },
           "Values": [
-            2.00003743,
-            3.66449332,
-            2.66443777,
-            2.30845737,
-            2.00003743,
-            1.73282373,
-            1.36442018,
-            1.10913074,
-            0.873326242,
-            0.6767837,
-            0.171907246,
-            0.0450795144,
-            0.0125992876,
-            0.00256038061
+            2000.03748,
+            3664.49341,
+            2664.43774,
+            2308.45728,
+            2000.03748,
+            1732.82373,
+            1364.42017,
+            1109.13074,
+            873.326233,
+            676.7836,
+            171.907242,
+            45.0795135,
+            12.599288,
+            2.56038046
           ],
           "Dimension": "Concentration (mass)",
-          "Unit": "mg/l"
+          "Unit": "µg/l"
         }
       ],
       "BaseGrid": {
@@ -9774,23 +11523,23 @@
             "MolWeight": 159.23
           },
           "Values": [
-            0.8459325,
-            1.5748235,
-            1.47757733,
-            1.76065719,
-            1.22040856,
-            1.12694621,
-            0.859520257,
-            0.6876545,
-            0.567969859,
-            0.4331898,
-            0.135359243,
-            0.0354954749,
-            0.009308037,
-            0.001984165
+            845.9325,
+            1574.82349,
+            1477.57739,
+            1760.6571,
+            1220.40857,
+            1126.94629,
+            859.520264,
+            687.6545,
+            567.969849,
+            433.1898,
+            135.359238,
+            35.4954758,
+            9.308037,
+            1.98416507
           ],
           "Dimension": "Concentration (mass)",
-          "Unit": "mg/l"
+          "Unit": "µg/l"
         }
       ],
       "BaseGrid": {
@@ -9889,22 +11638,22 @@
             "MolWeight": 159.23
           },
           "Values": [
-            0.6451915,
-            1.52542567,
-            1.34285069,
-            1.20111561,
-            1.05735672,
-            0.9308039,
-            0.721325934,
-            0.550154269,
-            0.4331898,
-            0.330393285,
-            0.08526991,
-            0.0196841955,
-            0.00295520923
+            645.1915,
+            1525.42566,
+            1342.85071,
+            1201.1156,
+            1057.35669,
+            930.8039,
+            721.3259,
+            550.154236,
+            433.1898,
+            330.39328,
+            85.26991,
+            19.6841965,
+            2.95520926
           ],
           "Dimension": "Concentration (mass)",
-          "Unit": "mg/l"
+          "Unit": "µg/l"
         }
       ],
       "BaseGrid": {
@@ -10002,21 +11751,21 @@
             "MolWeight": 159.23
           },
           "Values": [
-            0.6249536,
-            0.916089237,
-            0.7099228,
-            0.595780849,
-            0.492086649,
-            0.4331898,
-            0.341092378,
-            0.248006836,
-            0.204841852,
-            0.148939684,
-            0.0360656232,
-            0.00645191455
+            624.9536,
+            916.089233,
+            709.9228,
+            595.7809,
+            492.08667,
+            433.1898,
+            341.092377,
+            248.006836,
+            204.841858,
+            148.9397,
+            36.06562,
+            6.451915
           ],
           "Dimension": "Concentration (mass)",
-          "Unit": "mg/l"
+          "Unit": "µg/l"
         }
       ],
       "BaseGrid": {
@@ -10113,21 +11862,21 @@
             "MolWeight": 159.23
           },
           "Values": [
-            0.419601858,
-            0.387467563,
-            0.295520931,
-            0.25603807,
-            0.214872062,
-            0.183221236,
-            0.148939684,
-            0.110032894,
-            0.08663957,
-            0.06714129,
-            0.01625821,
-            0.00330393133
+            419.601868,
+            387.46756,
+            295.5209,
+            256.0381,
+            214.872055,
+            183.221237,
+            148.9397,
+            110.03289,
+            86.6395645,
+            67.14129,
+            16.2582111,
+            3.30393124
           ],
           "Dimension": "Concentration (mass)",
-          "Unit": "mg/l"
+          "Unit": "µg/l"
         }
       ],
       "BaseGrid": {
@@ -10224,20 +11973,20 @@
             "MolWeight": 159.23
           },
           "Values": [
-            0.153762773,
-            0.151332021,
-            0.127000734,
-            0.113596082,
-            0.09382495,
-            0.08392193,
-            0.06400713,
-            0.0528668463,
-            0.0429752059,
-            0.0338385478,
-            0.0102419034
+            153.762772,
+            151.332016,
+            127.000732,
+            113.596077,
+            93.82495,
+            83.921936,
+            64.00713,
+            52.8668442,
+            42.9752045,
+            33.8385468,
+            10.2419033
           ],
           "Dimension": "Concentration (mass)",
-          "Unit": "mg/l"
+          "Unit": "µg/l"
         }
       ],
       "BaseGrid": {
@@ -10333,19 +12082,19 @@
             "MolWeight": 159.23
           },
           "Values": [
-            0.08000446,
-            0.06714129,
-            0.05817091,
-            0.0488181524,
-            0.0422958359,
-            0.0360656232,
-            0.0262231659,
-            0.01876534,
-            0.0147757716,
-            0.010406414
+            80.00446,
+            67.14129,
+            58.17091,
+            48.81815,
+            42.2958336,
+            36.06562,
+            26.2231655,
+            18.7653389,
+            14.7757721,
+            10.406414
           ],
           "Dimension": "Concentration (mass)",
-          "Unit": "mg/l"
+          "Unit": "µg/l"
         }
       ],
       "BaseGrid": {
@@ -10440,19 +12189,19 @@
             "MolWeight": 159.23
           },
           "Values": [
-            0.0360656232,
-            0.0293175727,
-            0.0230845679,
-            0.0216590855,
-            0.01817672,
-            0.01600119,
-            0.0128016649,
-            0.0102419034,
-            0.007936955,
-            0.00476651266
+            36.06562,
+            29.3175716,
+            23.084568,
+            21.6590843,
+            18.17672,
+            16.00119,
+            12.8016644,
+            10.2419033,
+            7.936955,
+            4.76651239
           ],
           "Dimension": "Concentration (mass)",
-          "Unit": "mg/l"
+          "Unit": "µg/l"
         }
       ],
       "BaseGrid": {
@@ -10547,24 +12296,24 @@
             "MolWeight": 159.23
           },
           "Values": [
-            0.43287614,
-            0.9741738,
-            1.35108244,
-            1.62265921,
-            2.00049019,
-            2.19234633,
-            2.43424153,
-            2.4026022,
-            2.08056784,
-            1.82542372,
-            1.5602057,
-            1.02651119,
-            0.438576639,
-            0.148065716,
-            0.0486967564
+            432.876129,
+            974.173767,
+            1351.08252,
+            1622.65918,
+            2000.49023,
+            2192.34619,
+            2434.24146,
+            2402.602,
+            2080.56787,
+            1825.42371,
+            1560.20569,
+            1026.51123,
+            438.57666,
+            148.0657,
+            48.6967545
           ],
           "Dimension": "Concentration (mass)",
-          "Unit": "mg/l"
+          "Unit": "µg/l"
         }
       ],
       "BaseGrid": {
@@ -10664,24 +12413,24 @@
             "MolWeight": 159.23
           },
           "Values": [
-            0.0394994356,
-            0.1386901,
-            0.427249759,
-            0.6932807,
-            1.18539655,
-            1.87381756,
-            2.28010368,
-            2.46629763,
-            2.81101823,
-            2.81101823,
-            2.66769648,
-            2.00049019,
-            0.82181257,
-            0.249877557,
-            0.07024104
+            39.4994354,
+            138.6901,
+            427.2498,
+            693.2807,
+            1185.39648,
+            1873.81763,
+            2280.10376,
+            2466.29761,
+            2811.01831,
+            2811.01831,
+            2667.69653,
+            2000.49023,
+            821.812561,
+            249.877563,
+            70.24104
           ],
           "Dimension": "Concentration (mass)",
-          "Unit": "mg/l"
+          "Unit": "µg/l"
         }
       ],
       "BaseGrid": {
@@ -10781,22 +12530,22 @@
             "MolWeight": 159.23
           },
           "Values": [
-            0.8435997,
-            4.385767,
-            5.8485136,
-            5.697468,
-            5.3367,
-            4.272498,
-            3.2461133,
-            2.43424153,
-            1.84946239,
-            1.16998923,
-            0.486967564,
-            0.146141216,
-            0.03847931
+            843.5997,
+            4385.767,
+            5848.513,
+            5697.468,
+            5336.69971,
+            4272.498,
+            3246.11328,
+            2434.24146,
+            1849.4624,
+            1169.98926,
+            486.96756,
+            146.14122,
+            38.47931
           ],
           "Dimension": "Concentration (mass)",
-          "Unit": "mg/l"
+          "Unit": "µg/l"
         }
       ],
       "BaseGrid": {
